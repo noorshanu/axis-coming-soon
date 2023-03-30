@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import './App.css';
 import Top from './assets/top.svg'
 import Logo from './assets/logo.svg'
+import Social from "./Components/Social";
 function App() {
   const calculateTimeLeft = () => {
     const difference = +new Date("2023-04-28T18:20:00+05:30") - +new Date();
@@ -60,8 +61,11 @@ function App() {
         <p>Time is up 🔥</p>
       )}
 </div>
-    
+<div>
+  <Social/>
 </div>
+</div>
+
     
     </div>
   );
