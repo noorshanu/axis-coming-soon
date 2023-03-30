@@ -136,3 +136,47 @@ font-size: 25px;
     text-align: center;
     padding: 8px 14px;
 }
+
+@media (max-width:768px) {
+
+  .top-img{
+    display: none;
+
+  }
+  .coming h1 {
+  
+    font-size: 35px;
+    line-height: 40px;
+    /* identical to box height */
+
+  }
+  
+  .coming p {
+    
+    font-size: 13px;
+    line-height: 20px;
+
+  }
+  
+  .btn-gradient {
+    padding: 12px 9px;
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .social-media {
+    background: rgba(0, 0, 0, 0.23);
+    -webkit-backdrop-filter: blur(5.5px);
+    backdrop-filter: blur(5.5px);
+    padding: 4px 14px;
+  }
+
+  .social-media a {
+    background: rgba(0, 0, 0, 0.21);
+    box-shadow: inset -9px 1px 7px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 67%;
+    text-align: center;
+    padding: 8px 10px;
+  }
+}
