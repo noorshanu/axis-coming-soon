@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import './App.css';
-import Top from './assets/top.png'
+import Top from './assets/top.svg'
 import Logo from './assets/logo.svg'
 function App() {
   const calculateTimeLeft = () => {
@@ -8,10 +8,14 @@ function App() {
     let timeLeft = {};
 
     if (difference > 0) {
+      const millisecondsPerDay = 24 * 60 * 60 * 1000;
+  const days = Math.floor(difference / millisecondsPerDay);
+  const remainingTime = difference % millisecondsPerDay;
       timeLeft = {
-        hours: Math.floor(difference / (1000 * 60 * 60)),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
+        days: days,
+        hours: Math.floor(remainingTime / (1000 * 60 * 60)),
+        minutes: Math.floor((remainingTime / 1000 / 60) % 60),
+        seconds: Math.floor((remainingTime / 1000) % 60),
       };
     }
 
@@ -28,11 +32,12 @@ function App() {
   return (
     <div className="main ">
       <img src={Top} alt='' className='top-img'/>
+      <div className="sub-main">
       <div className='logo-div'>
         <img src={Logo} alt=''/>
 
       </div>
-      <div>
+      <div className="coming">
       <h1>Coming Soon</h1>
       <p>Discover a new level of financial freedom with our innovative decentralized solutions</p>
       </div>
@@ -40,18 +45,23 @@ function App() {
 <div>
 {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
         <p>
-          <span>{timeLeft.hours}</span>
+           <span className="btn-gradient">{timeLeft.days} Days</span>
+
+           <span>:</span>
+          <span className="btn-gradient">{timeLeft.hours}hours </span>
+          
           <span>:</span>
-          <span>{timeLeft.minutes}</span>
-          <span>:</span>
-          <span>{timeLeft.seconds}</span>
+
+          <span className="btn-gradient">{timeLeft.minutes} minutes</span>
+    
+         
         </p>
       ) : (
         <p>Time is up 🔥</p>
       )}
 </div>
     
-
+</div>
     
     </div>
   );

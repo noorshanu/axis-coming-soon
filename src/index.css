@@ -1,26 +1,77 @@
-*{
+* {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
-.main{
+.main {
   background-image: url(../src/assets/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-   margin: auto;
-   background-position: center center;
-  
+  margin: auto;
+  background-position: center center;
 }
 
-.logo-div{
+.logo-div {
   display: flex;
   justify-content: center;
   margin: auto;
 }
 
-.top-img{
+.top-img {
   position: absolute;
- left: auto;
- right: auto;
+  left: auto;
+  right: auto;
+}
+.sub-main {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.coming h1 {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 96px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.coming p {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.btn-gradient{
+  background: linear-gradient(158.2deg, #ACFFB9 14.29%, #11FF37 97.14%);
+backdrop-filter: blur(5.5px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 104px;
+border: 1px solid;
+
+padding: 6px 16px;;
+
+font-family: 'Monument Extended';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
 }
