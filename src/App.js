@@ -47,10 +47,10 @@ function App() {
         <p>
            <span className="btn-gradient">{timeLeft.days} Days</span>
 
-           <span>:</span>
-          <span className="btn-gradient">{timeLeft.hours}hours </span>
+           <span className="colon">:</span>
+          <span className="btn-gradient">{timeLeft.hours} hours </span>
           
-          <span>:</span>
+          <span className="colon">:</span>
 
           <span className="btn-gradient">{timeLeft.minutes} minutes</span>
     
