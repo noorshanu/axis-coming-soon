@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import './App.css';
 import Top from './assets/top.png'
-import Logo from './assets/logo.png'
+import Logo from './assets/logo.svg'
 function App() {
   const calculateTimeLeft = () => {
     const difference = +new Date("2023-04-28T18:20:00+05:30") - +new Date();
@@ -50,6 +50,8 @@ function App() {
         <p>Time is up 🔥</p>
       )}
 </div>
+    
+
     
     </div>
   );
