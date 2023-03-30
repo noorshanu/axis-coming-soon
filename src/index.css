@@ -10,6 +10,8 @@
   height: 100vh;
   margin: auto;
   background-position: center center;
+  align-items: center;
+  display: flex;
 }
 
 .logo-div {
