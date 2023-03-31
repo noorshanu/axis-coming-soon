@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Top from "./assets/top.svg";
 import Logo from "./assets/logo.svg";
 import ellipse1 from "./assets/Ellipse1.png";
+import Social from "./Components/Social";
 // import "./index.css";
 
 function App() {
@@ -70,16 +71,19 @@ function App() {
             <p>Time is up 🔥</p>
           )}
         </div>
+        <div>
+          <Social/>
+        </div>
       </div>
       {/* <div className="relative top-0 left-0 right-0 bottom-0"> */}
       <img
         src={ellipse1}
         className=" absolute top-0 right-0 left-0 slide-bottom-main h-auto w-screen z-10"
       />
-      <div className="bg-[url('/src/assets/Ellipse1.png')] absolute top-0 -left-44 bg-cover h-96 w-96 slide-bottom1"></div>
-      <div className="bg-[url('/src/assets/Ellipse2.png')] absolute top-0 -right-28 bg-cover h-96 w-96 slide-bottom1"></div>
-      <div className="bg-[url('/src/assets/Ellipse3.png')] absolute top-0 left-0 bg-cover h-28 w-16 slide-bottom2"></div>
-      <div className="bg-[url('/src/assets/Ellipse4.png')] absolute top-0 right-0 bg-cover h-20 w-10 slide-bottom"></div>
+      <div className="bg-[url('/src/assets/Ellipse1.png')] absolute top-0 -left-44 bg-cover h-80 w-80 md:h-96 md:w-96 slide-bottom1"></div>
+      <div className="bg-[url('/src/assets/Ellipse2.png')] absolute top-0 -right-28 bg-cover h-72 w-72 md:h-96 md:w-96 slide-bottom1"></div>
+      <div className="bg-[url('/src/assets/Ellipse3.png')] absolute top-0 -left-14 bg-cover h-28 w-28 bg-no-repeat slide-bottom2"></div>
+      <div className="bg-[url('/src/assets/Ellipse4.png')] absolute top-0 -right-12 bg-cover h-24 w-24 slide-bottom2"></div>
 
       {/* </div> */}
     </div>
