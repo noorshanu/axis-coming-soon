@@ -153,8 +153,8 @@ body {
     transform: translateY(-30vh);
   }
   100% {
-    -webkit-transform: translateY(115%);
-    transform: translateY(115%);
+    -webkit-transform: translateY(70vh);
+    transform: translateY(70vh);
   }
 }
 @keyframes slide-bottom1 {
@@ -163,8 +163,8 @@ body {
     transform: translateY(-30vh);
   }
   100% {
-    -webkit-transform: translateY(115%);
-    transform: translateY(115%);
+    -webkit-transform: translateY(70vh);
+    transform: translateY(70vh);
   }
 }
 
