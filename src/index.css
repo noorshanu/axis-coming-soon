@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 body {
   overflow: hidden;
@@ -62,9 +60,6 @@ body {
   font-family: "Monument Extended blod";
   font-style: normal;
   font-weight: 800;
-  font-size: 80px;
-  line-height: 96px;
-  /* identical to box height */
   margin-bottom: 1.5rem;
   text-align: center;
 
@@ -118,7 +113,8 @@ body {
 
   color: #ffffff;
 }
-.slide-bottom {
+
+.slide-bottom-main {
   position: absolute;
   -webkit-animation: slide-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -126,22 +122,49 @@ body {
 
 @-webkit-keyframes slide-bottom {
   0% {
-    -webkit-transform: translateY(-30vh);
-    transform: translateY(-30vh);
+    -webkit-transform: translateY(-90vh);
+    transform: translateY(-90vh);
   }
   100% {
-    -webkit-transform: translateY(80%);
-    transform: translateY(80%);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
   }
 }
 @keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-90vh);
+    transform: translateY(-90vh);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+.slide-bottom1 {
+  position: absolute;
+  -webkit-animation: slide-bottom1 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom1 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-bottom1 {
   0% {
     -webkit-transform: translateY(-30vh);
     transform: translateY(-30vh);
   }
   100% {
-    -webkit-transform: translateY(80%);
-    transform: translateY(80%);
+    -webkit-transform: translateY(115%);
+    transform: translateY(115%);
+  }
+}
+@keyframes slide-bottom1 {
+  0% {
+    -webkit-transform: translateY(-30vh);
+    transform: translateY(-30vh);
+  }
+  100% {
+    -webkit-transform: translateY(115%);
+    transform: translateY(115%);
   }
 }
 
@@ -202,7 +225,7 @@ body {
 .slide-fwd-left {
   -webkit-animation: slide-fwd-left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
    1s both;
-  animation: slide-fwd-left .4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  animation: slide-fwd-left .4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s both;
 }
 @-webkit-keyframes slide-fwd-left {
   0% {
@@ -227,8 +250,8 @@ body {
 
 .slide-fwd-right {
   animation-delay: 1s;
-	-webkit-animation: slide-fwd-right .4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-	        animation: slide-fwd-right .4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	-webkit-animation: slide-fwd-right .4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
+	        animation: slide-fwd-right .4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
 }
 @-webkit-keyframes slide-fwd-right {
   0% {
@@ -255,8 +278,8 @@ body {
 
 
 .scale-up-center {
-	-webkit-animation: scale-up-center .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
-	        animation: scale-up-center .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+	-webkit-animation: scale-up-center .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
+	        animation: scale-up-center .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
 }
 @-webkit-keyframes scale-up-center {
   0% {
@@ -281,8 +304,8 @@ body {
 
 .slide-top {
   
-	-webkit-animation: slide-top .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-	        animation: slide-top .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	-webkit-animation: slide-top .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
+	        animation: slide-top .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
 }
 
 @-webkit-keyframes slide-top {
@@ -305,3 +328,8 @@ body {
             transform: translateY(0px);
   }
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
