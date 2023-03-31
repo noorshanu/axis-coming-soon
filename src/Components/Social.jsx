@@ -6,7 +6,7 @@ import {BsDiscord} from 'react-icons/bs'
 function Social() {
   return (
     <>
-    <div className='social-media'>
+    <div className='social-media flex flex-wrap justify-center'>
       
             <a href="/"> <BsMedium/></a>
             <a href="/"> <SiGitbook/></a>
