@@ -1,10 +1,4 @@
 
-
-body {
-  overflow: hidden;
-}
-
-
 body {
   overflow: hidden;
 }
@@ -12,13 +6,7 @@ body {
   margin: 0;
   padding: 0;
 }
-@font-face {
-  font-family: "Monument Extended reg";
-  font-family: "Monument Extended reg";
-  src: url(./fonts/MonumentExtended-Regular.otf);
 
-  font-weight: 100;
-}
 @font-face {
   font-family: "Monument Extended blod";
   font-family: "Monument Extended blod";
@@ -43,7 +31,7 @@ body {
   margin: auto;
   margin-bottom: 2rem;
 }
-.logo-div img {
+
 .logo-div img {
   width: auto;
   height: 100px;
@@ -89,10 +77,7 @@ body {
 }
 
 .btn-gradient {
-  background: linear-gradient(158.2deg, #acffb9 14.29%, #11ff37 97.14%);
-  backdrop-filter: blur(5.5px);
-  /* Note: backdrop-filter has minimal browser support */
-.btn-gradient {
+
   background: linear-gradient(158.2deg, #acffb9 14.29%, #11ff37 97.14%);
   backdrop-filter: blur(5.5px);
   /* Note: backdrop-filter has minimal browser support */
@@ -126,7 +111,7 @@ body {
   color: #000000;
 }
 .colon {
-.colon {
+
   margin-left: 10px;
   margin-right: 10px;
   font-family: "Monument Extended reg";
@@ -420,12 +405,12 @@ body {
   }
   @keyframes slide-bottom1 {
     0% {
-      -webkit-transform: translateY(-15vh);
-      transform: translateY(-15vh);
+      -webkit-transform: translateY(15vh) rotate(285deg);
+      transform: translateY(15vh) rotate(285deg);
     }
     100% {
-      -webkit-transform: translateY(170%);
-      transform: translateY(170%);
+      -webkit-transform: translateY(170%) rotate(50deg);;
+      transform: translateY(170%) rotate(50deg);;
     }
   }}
 .social-media{
@@ -454,6 +439,3 @@ font-size: 25px;
 @tailwind components;
 @tailwind utilities;
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
