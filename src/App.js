@@ -36,13 +36,13 @@ function App() {
     <div className="main ">
       <img src={Top} alt="" className="top-img" />
       <div className="sub-main ">
-        <div className="header slide-top">
-          <div className="logo-div">
+        <div className="header ">
+          <div className="logo-div slide-top">
             <img src={Logo} alt="" />
           </div>
           <div className="coming">
             <h1 className="text-3xl sm:text-5xl md:text-7xl">Coming Soon</h1>
-            <p>
+            <p className="md:w-[70%] mx-auto slide-to-bottom">
               Discover a new level of financial freedom with our innovative
               decentralized solutions
             </p>
