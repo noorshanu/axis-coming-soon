@@ -1,3 +1,4 @@
+@font-face {font-family: "Monument Extended"; src: url("//db.onlinewebfonts.com/t/99501fdab737541e9315ceaf9229370f.eot"); src: url("//db.onlinewebfonts.com/t/99501fdab737541e9315ceaf9229370f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/99501fdab737541e9315ceaf9229370f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/99501fdab737541e9315ceaf9229370f.woff") format("woff"), url("//db.onlinewebfonts.com/t/99501fdab737541e9315ceaf9229370f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/99501fdab737541e9315ceaf9229370f.svg#Monument Extended") format("svg"); }
 body {
   height: 100vh;
   width: 100vw;
@@ -10,10 +11,7 @@ body {
 
 @font-face {
   font-family: "Monument Extended blod";
-  font-family: "Monument Extended blod";
-
   src: url(./fonts/MonumentExtended-Ultrabold.otf);
-  font-weight: 600;
 }
 .main {
   background-image: url(../src/assets/bg.jpg);
@@ -69,9 +67,8 @@ body {
 .coming p {
   font-family: "Monument Extended";
   text-align: center;
-  font-weight: 500;
 
-  font-size: 24px;
+  font-size: 18px;
   line-height: 24px;
   text-align: center;
 
@@ -90,23 +87,21 @@ body {
   justify-content: center;
   align-items: center;
   padding: 4px 8px;
-  font-family: "Monument Extended reg";
-  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   backdrop-filter: blur(4px);
-  font-size: 26px;
+  font-size: 25px;
+  font-family: "circular";
   text-transform: uppercase;
   color: #000000;
 }
 .colon {
-  font-family: "Monument Extended reg";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   /* identical to box height */
-  font-family: "Monument Extended reg";
+  font-family: "Monument Extended";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -347,7 +342,6 @@ body {
   }
 }
 
-
 @media (max-width: 768px) {
   @-webkit-keyframes slide-bottom-main {
     0% {
@@ -441,8 +435,8 @@ body {
       transform: translateY(-60vh);
     }
     100% {
-      -webkit-transform: translateY(230%) ;
-      transform: translateY(230%) ;
+      -webkit-transform: translateY(230%);
+      transform: translateY(230%);
     }
   }
 }
@@ -454,7 +448,6 @@ body {
   border-radius: 104px;
   display: flex;
   align-items: center;
-  
 }
 
 .social-media a {
@@ -465,10 +458,6 @@ body {
   border-radius: 67%;
   text-align: center;
   padding: 8px 14px;
-}
-.social-media-twitter {
-  background: white !important;
-  box-shadow: none !important;
 }
 
 @tailwind base;

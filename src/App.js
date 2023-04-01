@@ -54,7 +54,7 @@ function App() {
             <p className="flex flex-wrap space-y-2 justify-center items-center">
               <span className="btn-gradient  w-[130px] h-[55px] sm:w-[150px] sm:h-[63px]  md:w-[200px] md:h-[70px] slide-fwd-left">
                 <span className="font-extrabold"> {timeLeft.days} </span>{" "}
-                <span className="font-light ml-1 text-black opacity-75">
+                <span className="font-light ml-1.5 text-black opacity-60">
                   {" "}
                   Days{" "}
                 </span>
@@ -63,7 +63,7 @@ function App() {
               <span className="colon md:mx-2.5 sm:mx-1.5 mx-1">:</span>
               <span className="btn-gradient  w-[130px] h-[55px] sm:w-[150px] sm:h-[63px]  md:w-[200px] md:h-[70px] scale-up-center">
                 <span className="font-extrabold"> {timeLeft.hours} </span>{" "}
-                <span className="font-light ml-1 text-black opacity-75">
+                <span className="font-light ml-1.5 text-black opacity-60">
                   {" "}
                   hours{" "}
                 </span>
@@ -73,7 +73,7 @@ function App() {
 
               <span className="btn-gradient  w-[130px] h-[55px] sm:w-[150px] sm:h-[63px]  md:w-[200px] md:h-[70px] slide-fwd-right delay-1000">
                 <span className="font-extrabold"> {timeLeft.minutes} </span>{" "}
-                <span className="font-light ml-1 text-black opacity-75">
+                <span className="font-light ml-1.5 text-black opacity-60">
                   {" "}
                   minutes{" "}
                 </span>
