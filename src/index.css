@@ -12,6 +12,13 @@ body {
 @font-face {
   font-family: "Monument Extended blod";
   src: url(./fonts/MonumentExtended-Ultrabold.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Monument Extended reg";
+  src: url(./fonts/MonumentExtended-Regular.otf);
+  font-weight: 600;
 }
 .main {
   background-image: url(../src/assets/bg.jpg);
@@ -65,7 +72,7 @@ body {
 }
 
 .coming p {
-  font-family: "Monument Extended";
+  font-family: "Monument Extended reg";
   text-align: center;
 
   font-size: 18px;
@@ -81,6 +88,7 @@ body {
   background: linear-gradient(158.2deg, #acffb9 14.29%, #11ff37 97.14%);
   backdrop-filter: blur(5.5px);
   border-radius: 104px;
+  font-family: 'Monument Extended reg';
   width: 200px;
   height: 70px;
   display: flex;
@@ -106,8 +114,6 @@ body {
   font-weight: 400;
   font-size: 20px;
 
-  line-height: 24px;
-  /* identical to box height */
 
   text-align: center;
 
@@ -573,7 +579,7 @@ body {
   font-size: 25px;
   border-radius: 67%;
   text-align: center;
-  padding: 8px 14px;
+  padding: 11px 14px;
 }
 
 @tailwind base;
