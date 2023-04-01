@@ -14,6 +14,12 @@ body {
   src: url(./fonts/MonumentExtended-Ultrabold.otf);
   font-weight: 600;
 }
+
+@font-face {
+  font-family: "Monument Extended reg";
+  src: url(./fonts/MonumentExtended-Regular.otf);
+  font-weight: 600;
+}
 .main {
   background-image: url(../src/assets/bg.jpg);
   background-repeat: no-repeat;
@@ -82,6 +88,7 @@ body {
   background: linear-gradient(158.2deg, #acffb9 14.29%, #11ff37 97.14%);
   backdrop-filter: blur(5.5px);
   border-radius: 104px;
+  font-family: 'Monument Extended reg';
   width: 200px;
   height: 70px;
   display: flex;
@@ -92,7 +99,7 @@ body {
   text-align: center;
   backdrop-filter: blur(4px);
   font-size: 25px;
-  font-family: "circular";
+  
   text-transform: uppercase;
   color: #000000;
 }
