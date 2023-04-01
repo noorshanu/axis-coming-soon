@@ -21,6 +21,7 @@ body {
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
   margin: auto;
   background-position: center center;
   align-items: center;
@@ -66,54 +67,39 @@ body {
 }
 
 .coming p {
-  font-family: 'Monument Extended';
-  text-align: center;  
+  font-family: "Monument Extended";
+  text-align: center;
   font-weight: 500;
 
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  
-  color: #FFFFFF;
+
+  color: #ffffff;
   margin-bottom: 3rem;
 }
 
 .btn-gradient {
+  cursor: pointer;
   background: linear-gradient(158.2deg, #acffb9 14.29%, #11ff37 97.14%);
   backdrop-filter: blur(5.5px);
-  /* Note: backdrop-filter has minimal browser support */
-
   border-radius: 104px;
-  border: 1px solid transparent;
-  border-radius: 104px;
-  border: 1px solid transparent;
-
-  padding: 19px 33px;
+  width: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
   font-family: "Monument Extended reg";
-  padding: 19px 33px;
-  font-family: "Monument Extended reg";
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 24px;
-  /* identical to box height */
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
-  font-style: normal;
-  font-weight: 400;
+  backdrop-filter: blur(4px);
   font-size: 26px;
-  line-height: 24px;
-  /* identical to box height */
   text-transform: uppercase;
-  text-align: center;
-
-  color: #000000;
   color: #000000;
 }
 .colon {
-  margin-left: 10px;
-  margin-right: 10px;
   font-family: "Monument Extended reg";
   font-style: normal;
   font-weight: 400;
@@ -124,10 +110,10 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
+
   line-height: 24px;
   /* identical to box height */
 
-  text-align: center;
   text-align: center;
 
   color: #ffffff;
@@ -302,7 +288,8 @@ body {
 }
 
 .slide-to-bottom {
-  -webkit-animation: slide-to-bottom 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  -webkit-animation: slide-to-bottom 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    1s both;
   animation: slide-to-bottom 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
 }
 
@@ -360,6 +347,7 @@ body {
   }
 }
 
+
 @media (max-width: 768px) {
   @-webkit-keyframes slide-bottom-main {
     0% {
@@ -396,9 +384,7 @@ body {
   }
 
   .btn-gradient {
-    padding: 12px 9px;
-    font-size: 11px;
-    line-height: 18px;
+    font-size: 18px;
   }
   .social-media {
     background: rgba(0, 0, 0, 0.23);
@@ -438,6 +424,28 @@ body {
     }
   }
 }
+@media (max-width: 468px) {
+  @-webkit-keyframes slide-bottom-main {
+    0% {
+      -webkit-transform: translateY(-60vh);
+      transform: translateY(-60vh);
+    }
+    100% {
+      -webkit-transform: translateY(230%);
+      transform: translateY(230%);
+    }
+  }
+  @keyframes slide-bottom-main {
+    0% {
+      -webkit-transform: translateY(-60vh);
+      transform: translateY(-60vh);
+    }
+    100% {
+      -webkit-transform: translateY(230%) ;
+      transform: translateY(230%) ;
+    }
+  }
+}
 .social-media {
   background: rgba(0, 0, 0, 0.23);
   backdrop-filter: blur(5.5px);
@@ -446,8 +454,7 @@ body {
   border-radius: 104px;
   display: flex;
   align-items: center;
-  gap: 20px;
-  margin-top: 50px;
+  
 }
 
 .social-media a {
@@ -459,7 +466,7 @@ body {
   text-align: center;
   padding: 8px 14px;
 }
-.social-media-twitter{
+.social-media-twitter {
   background: white !important;
   box-shadow: none !important;
 }

@@ -21,9 +21,9 @@
     both;
 }
 .animate-center {
-  -webkit-animation: animation-two-left 0.8s
-    cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s both;
-  animation: animation-scale 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.9s both;
+  -webkit-animation: animation-two-left 0.3s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.7s both;
+  animation: animation-scale 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.7s both;
 }
 
 @-webkit-keyframes animation-one {

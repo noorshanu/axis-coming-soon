@@ -33,10 +33,10 @@ function App() {
     }, 1000);
   });
   return (
-    <div className="main ">
+    <div className="main relative">
       <img src={Top} alt="" className="top-img" />
-      <div className="sub-main ">
-        <div className="header ">
+      <div className="sub-main h-screen">
+        <div className="header h-[286px]  sm:h-auto">
           <div className="logo-div slide-top">
             <img src={Logo} alt="" />
           </div>
@@ -52,28 +52,38 @@ function App() {
         <div className="flex flex-wrap">
           {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
             <p className="flex flex-wrap space-y-2 justify-center items-center">
-              <span className="btn-gradient slide-fwd-left">
-                {timeLeft.days} Days
+              <span className="btn-gradient  w-[130px] h-[55px] sm:w-[150px] sm:h-[63px]  md:w-[200px] md:h-[70px] slide-fwd-left">
+                <span className="font-extrabold"> {timeLeft.days} </span>{" "}
+                <span className="font-light ml-1 text-black opacity-75">
+                  {" "}
+                  Days{" "}
+                </span>
               </span>
 
-              <span className="colon">:</span>
-              <span className="btn-gradient scale-up-center">
-                {timeLeft.hours} hours{" "}
+              <span className="colon md:mx-2.5 sm:mx-1.5 mx-1">:</span>
+              <span className="btn-gradient  w-[130px] h-[55px] sm:w-[150px] sm:h-[63px]  md:w-[200px] md:h-[70px] scale-up-center">
+                <span className="font-extrabold"> {timeLeft.hours} </span>{" "}
+                <span className="font-light ml-1 text-black opacity-75">
+                  {" "}
+                  hours{" "}
+                </span>
               </span>
 
-              <span className="colon">:</span>
+              <span className="colon md:mx-2.5 sm:mx-1.5 mx-1">:</span>
 
-              <span className="btn-gradient slide-fwd-right delay-1000">
-                {timeLeft.minutes} minutes
+              <span className="btn-gradient  w-[130px] h-[55px] sm:w-[150px] sm:h-[63px]  md:w-[200px] md:h-[70px] slide-fwd-right delay-1000">
+                <span className="font-extrabold"> {timeLeft.minutes} </span>{" "}
+                <span className="font-light ml-1 text-black opacity-75">
+                  {" "}
+                  minutes{" "}
+                </span>
               </span>
             </p>
           ) : (
             <p>Time is up 🔥</p>
           )}
         </div>
-        <div>
-          <Social/>
-        </div>
+          <Social />
       </div>
       {/* <div className="relative top-0 left-0 right-0 bottom-0"> */}
       <img

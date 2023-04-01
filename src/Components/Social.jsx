@@ -8,7 +8,7 @@ import './social.css'
 function Social() {
   return (
     <>
-    <div className='social-media flex flex-wrap justify-center'>
+    <div className='social-media gap-x-1.5 sm:gap-x-2 md:gap-x-2.5 mt-[30px] md:mt-[50px] flex flex-wrap justify-center'>
       
             <a href="/" className='animate-left'> <BsMedium/></a>
             <a href="/" className='animate-two-left'> <SiGitbook/></a>
