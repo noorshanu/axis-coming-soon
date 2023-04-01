@@ -54,7 +54,7 @@ function App() {
             <p className="flex flex-wrap space-y-2 justify-center items-center">
               <span className="btn-gradient  w-[130px] h-[55px] sm:w-[150px] sm:h-[63px]  md:w-[200px] md:h-[70px] slide-fwd-left">
                 <span className="font-extrabold"> {timeLeft.days} </span>{" "}
-                <span className="font-light ml-1.5 text-black opacity-60">
+                <span className="font-bold ml-1.5 text-black opacity-60">
                   {" "}
                   Days{" "}
                 </span>
@@ -63,7 +63,7 @@ function App() {
               <span className="colon md:mx-2.5 sm:mx-1.5 mx-1">:</span>
               <span className="btn-gradient  w-[130px] h-[55px] sm:w-[150px] sm:h-[63px]  md:w-[200px] md:h-[70px] scale-up-center">
                 <span className="font-extrabold"> {timeLeft.hours} </span>{" "}
-                <span className="font-light ml-1.5 text-black opacity-60">
+                <span className="font-bold ml-1.5 text-black opacity-60">
                   {" "}
                   hours{" "}
                 </span>
@@ -73,7 +73,7 @@ function App() {
 
               <span className="btn-gradient  w-[130px] h-[55px] sm:w-[150px] sm:h-[63px]  md:w-[200px] md:h-[70px] slide-fwd-right delay-1000">
                 <span className="font-extrabold"> {timeLeft.minutes} </span>{" "}
-                <span className="font-light ml-1.5 text-black opacity-60">
+                <span className="font-bold ml-1.5 text-black opacity-60">
                   {" "}
                   minutes{" "}
                 </span>
@@ -92,8 +92,8 @@ function App() {
       />
       <div className="bg-[url('/src/assets/Ellipse1.png')] absolute top-0 -left-44 bg-cover h-80 w-80 md:h-96 md:w-96 slide-bottom1"></div>
       <div className="bg-[url('/src/assets/Ellipse2.png')] absolute top-0 -right-28 bg-cover h-72 w-72 md:h-96 md:w-96 slide-bottom1"></div>
-      <div className="bg-[url('/src/assets/Ellipse3.png')] absolute top-0 -left-14 bg-cover h-28 w-28 bg-no-repeat slide-bottom2"></div>
-      <div className="bg-[url('/src/assets/Ellipse4.png')] absolute top-0 -right-12 bg-cover h-24 w-24 slide-bottom2"></div>
+      <div className="bg-[url('/src/assets/Ellipse3.png')] absolute top-0 -left-7 bg-cover h-16 w-16 bg-no-repeat slide-bottom2"></div>
+      <div className="bg-[url('/src/assets/Ellipse4.png')] absolute top-0 -right-12 bg-cover h-24 w-24 slide-bottom5"></div>
 
       {/* </div> */}
     </div>
