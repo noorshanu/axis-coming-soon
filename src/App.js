@@ -52,7 +52,7 @@ function App() {
         <div className="flex flex-wrap">
           {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
             <p className="flex flex-wrap space-y-2 justify-center items-center">
-              <span className="btn-gradient  w-[130px] h-[55px] sm:w-[150px] sm:h-[63px]  md:w-[250px] md:h-[70px] slide-fwd-left">
+              <span className="btn-gradient mt-2  w-[130px] h-[55px] sm:w-[150px] sm:h-[63px]  md:w-[250px] md:h-[70px] slide-fwd-left">
                 <span className="font-extrabold"> {timeLeft.days} </span>{" "}
                 <span className="font-light ml-1.5 text-black opacity-60">
                   {" "}
