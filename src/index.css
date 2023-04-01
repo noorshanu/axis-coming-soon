@@ -12,14 +12,7 @@ body {
 @font-face {
   font-family: "Monument Extended blod";
   src: url(./fonts/MonumentExtended-Ultrabold.otf);
-}
-
-@font-face {
-  font-family: "Monument Extended reg";
-  font-family: "Monument Extended reg";
-
-  src: url(./fonts/MonumentExtended-Regular.otf);
-  font-weight: 300;
+  font-weight: 600;
 }
 .main {
   background-image: url(../src/assets/bg.jpg);
@@ -104,13 +97,12 @@ body {
   color: #000000;
 }
 .colon {
-  font-family: "Monument Extended reg";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   /* identical to box height */
-  font-family: "Monument Extended reg";
+  font-family: "Monument Extended";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
