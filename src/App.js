@@ -4,8 +4,16 @@ import Logo from "./assets/logo.svg";
 import ellipse1 from "./assets/Ellipse1.png";
 import Social from "./Components/Social";
 // import "./index.css";
+import OneSignal from 'react-onesignal';
 
 function App() {
+  useEffect (() => {
+    OneSignal.init({
+      // appId: "4adb1626-9939-4d4c-8f5c-92cce7be454a",
+      appId: "6342aaf4-7319-4569-b711-f4bb2d2feb3e",
+    
+    });
+  })
   const calculateTimeLeft = () => {
     const difference = +new Date("2023-04-05T18:20:00+05:30") - +new Date();
     let timeLeft = {};
