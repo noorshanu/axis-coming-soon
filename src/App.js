@@ -15,7 +15,7 @@ function App() {
     });
   })
   const calculateTimeLeft = () => {
-    const difference = +new Date("2023-04-05T18:20:00+05:30") - +new Date();
+    const difference = +new Date("2023-05-08T18:20:00+05:30") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
