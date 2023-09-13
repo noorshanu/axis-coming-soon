@@ -1,12 +1,14 @@
 #!/bin/bash
 
-#_Change_Working_Directory
+set -e
+
+# Change Working Directory
 cd /var/www/html/build
 
-#_Update_&_Set_Node_Version
+# Update & Set Node Version
 curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 
-#_Download_Node_&NPM
+# Download Node & NPM
 sudo apt-get install -y nodejs
 
 sudo npm install pm2 -g
