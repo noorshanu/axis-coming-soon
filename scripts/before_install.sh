@@ -4,7 +4,7 @@
 cd /var/www/html/build
 
 #_Update_&_Set_Node_Version
-curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_18.17 | sudo -E bash -
 
 #_Download_Node_&NPM
 sudo apt-get install -y nodejs
