@@ -5,7 +5,7 @@ set -e
 # Change Working Directory
 cd /var/www/html/build
 
-# Update & Set Node Version
+#_Update_&_Set_Node_Version
 curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 
 # Download Node & NPM
