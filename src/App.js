@@ -51,7 +51,7 @@ function App() {
           <div className="coming">
             <h1 className="text-3xl sm:text-5xl md:text-7xl">Coming Soon</h1>
             <p className="md:w-[70%] mx-auto slide-to-bottom">
-              Discover a new level of financial freedom with our innovative
+              Discover a new level of financial freedom with our innovative ghhbnhcg
               decentralized solutions
             </p>
           </div>
