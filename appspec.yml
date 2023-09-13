@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: /SourceDirectory  # Adjust this to point to your actual source directory
+  - source: / # Adjust this to point to your actual source directory
     destination: /var/www/html/build
 
 permissions:
